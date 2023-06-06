@@ -13,18 +13,18 @@ body h3 {
   margin: 0 auto;
 }
 .title {
-  font-size: 24px;
+  font-size: 34px;
   font-weight: 500;
   color: gray;
 }
 .table-wrapper {
   max-width: 90%;
 }
-.edit-link {
-  padding: 7px 10px;
-  font-size: 0.875rem;
+.links {
+  padding: 10px 70px;
+  font-size: 1rem;
   line-height: normal;
-  border-radius: 0.2rem;
+  border-radius: 10px;
   text-decoration: none;
   color: #fff;
   background-color: #28a745;
@@ -33,38 +33,33 @@ body h3 {
   position: relative;
   top: 1px;
 }
-.edit-link:hover {
+.links:hover {
+  text-decoration: none;
+  background-color: #196b2c;
+  color: #ffffff;
+}
+
+.show-link {
+  padding: 5px 10px;
+  font-size: 1rem;
+  line-height: normal;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #fff;
+  background-color: #28a745;
+  border-color: #28a745;
+  margin-right: 10px;
+  position: relative;
+  top: 1px;
+}
+.show-link:hover {
   text-decoration: none;
   background-color: #196b2c;
   color: #ffffff;
 }
 
 .logo {
-  font-size: 32px;;
-}
-
-.nav-link {
-  font-size: 24px;
-  color: red;
-}
-
-.delete-link {
-  padding: 7px 10px;
-  font-size: 0.875rem;
-  line-height: normal;
-  border-radius: 0.2rem;
-  text-decoration: none;
-  color: #fff;
-  background-color: #c72121;
-  border-color: #c72121;
-  margin-right: 10px;
-  position: relative;
-  top: 1px;
-}
-.delete-link:hover {
-  text-decoration: none;
-  background-color: #841515;
-  color: #ffffff;
+  font-size: 40px;;
 }
 
 * {

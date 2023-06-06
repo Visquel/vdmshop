@@ -8,7 +8,7 @@ export default function Nav(){
     <div className="navbar">
       <div className="logo">VDM Shop</div>
         <ul className="nav-links">
-          <Link className="nav-link" to="/home">Inicio</Link>
+          <Link className="nav-link" to="/home">Products</Link>
         </ul>
     </div>
   );

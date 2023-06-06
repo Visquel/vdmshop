@@ -4,41 +4,31 @@ import { Link } from "react-router-dom";
 class Landing extends Component {
   render() {
     return (
-      <div style={{ height: "75vh" }} className="container valign-wrapper">
+      <div className="form-wrapper mt-5">
         <div className="row">
-          <div className="col s12 center-align">
-            <h4>
-              <b>Build</b> a login/auth app with the{" "}
-              <span style={{ fontFamily: "monospace" }}>MERN</span> stack from
-              scratch
+          <div className="text-center mt-5">
+            <h4 className="text-success">
+              VDM Shop is an E-commerce business where you can buy products online
             </h4>
-            <p className="flow-text grey-text text-darken-1">
-              Create a (minimal) full-stack app with user authentication via
-              passport and JWTs
+            <p className="text-secondary">
+              VDM Shop is a Webapp that will shows you the best deals available online
+            </p>
+            <p className="text-secondary">
+              you can start using it bellow
             </p>
             <br />
-            <div className="col s6">
+            <div className="mt-5">
               <Link
                 to="/register"
-                style={{
-                  width: "140px",
-                  borderRadius: "3px",
-                  letterSpacing: "1.5px"
-                }}
-                className="btn btn-large waves-effect waves-light hoverable blue accent-3"
+                className="links"
               >
                 Register
               </Link>
             </div>
-            <div className="col s6">
+            <div className="mt-5">
               <Link
                 to="/login"
-                style={{
-                  width: "140px",
-                  borderRadius: "3px",
-                  letterSpacing: "1.5px"
-                }}
-                className="btn btn-large btn-flat waves-effect white black-text"
+                className="links"
               >
                 Log In
               </Link>

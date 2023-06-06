@@ -31,24 +31,30 @@ export default class List extends Component {
   }
 
   render() {
-    return (<div className="table-wrapper mt-5">
-      <p className="title">Listado de Productos</p>
-      <Table striped bordered hover>
-        <thead>
-          <tr>
-            <th>ID</th>
-            <th>Image</th>
-            <th>Name</th>
-            <th>Price</th>
-            <th>Description</th>
-            <th>Category</th>
-            <th>Rating</th>
-          </tr>
-        </thead>
-        <tbody>
-          {this.DataTable()}
-        </tbody>
-      </Table>
-    </div>);
+    return (
+      <>
+        <div className="table-wrapper my-5 py-5">
+          <p className="title">Products List</p>
+          <Table striped bordered hover>
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Image</th>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Description</th>
+                <th>Category</th>
+                <th>Rating</th>
+                <th>Votes</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              {this.DataTable()}
+            </tbody>
+          </Table>
+        </div>
+    </>
+    );
   }
 }

@@ -5,6 +5,7 @@ import List from "./List";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import { logoutUser } from "../actions/authActions";
+import Button from "react-bootstrap/esm/Button";
 
 class Home extends Component {
 
@@ -36,23 +37,21 @@ class Home extends Component {
     const { user } = this.props.auth;
     return(
       <>
+        <div className="float-end mx-5 px-5">
+          <Button
+            onClick={this.onLogoutClick}
+            className="ml-5 text-right"
+            variant="danger"
+            size="md"
+          >
+            Logout
+          </Button>
+        </div>
         <div className="form-wrapper">
-        <button
-          style={{
-            width: "150px",
-            borderRadius: "3px",
-            letterSpacing: "1.5px",
-            marginTop: "1rem"
-          }}
-          onClick={this.onLogoutClick}
-          className="btn btn-large waves-effect waves-light hoverable blue accent-3"
-        >
-          Logout
-        </button>
-          <h1>Bienvenido {user.name}</h1>
+          <h1>Welcome {user.name}</h1>
           <br></br>
           <br></br>
-          <p className="title">Actualmente existen {this.state.data.length} productos disponibles en el sistema, puede visualizar los detalles en la tabla debajo</p>
+          <p className="title">Here are more than {this.state.data.length} products available in the system, you can see them bellow</p>
         </div>
         <List />
       </>
