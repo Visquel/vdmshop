@@ -1,10 +1,37 @@
-# Getting Started with Create React App
+# This Project is a Simple MERN Project for an online store
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Prerequisites
 
-In the project directory, you can run:
+Below noted things you need to install to run this project in your system
+
+* Node.js
+* NPM
+* MongoDB
+
+## Setup
+
+Clone or download this repository
+
+1. ### `cd vdmshop/backend`
+2. ### `npm install`
+3. ### `cd vdmshop`
+4. ### `npm install`
+
+## To run
+
+to run node server
+
+1. ### `cd vdmshop/backend`
+2. ### `node index.js`
+
+to run react frontend
+
+1. ### `cd vdmshop`
+2. ### `npm start`
+
+
 
 ### `npm start`
 
